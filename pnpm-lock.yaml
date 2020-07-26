@@ -133,7 +133,7 @@ importers:
       typescript: ^3.7.4
   packages/commonjs:
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.22.0
+      '@rollup/pluginutils': 'link:../pluginutils'
       commondir: 1.0.1
       estree-walker: 2.0.1
       glob: 7.1.6
@@ -141,9 +141,8 @@ importers:
       magic-string: 0.25.7
       resolve: 1.17.0
     devDependencies:
-      '@rollup/plugin-json': 4.1.0_rollup@2.22.0
-      '@rollup/plugin-node-resolve': 8.4.0_rollup@2.22.0
-      acorn: 7.3.1
+      '@rollup/plugin-json': 'link:../json'
+      '@rollup/plugin-node-resolve': 'link:../node-resolve'
       locate-character: 2.0.5
       prettier: 1.19.1
       require-relative: 0.8.7
@@ -156,7 +155,6 @@ importers:
       '@rollup/plugin-json': ^4.1.0
       '@rollup/plugin-node-resolve': ^8.4.0
       '@rollup/pluginutils': ^3.1.0
-      acorn: ^7.3.1
       commondir: ^1.0.1
       estree-walker: ^2.0.1
       glob: ^7.1.6
@@ -3208,15 +3206,6 @@ packages:
       rollup: ^1.20.0 || ^2.0.0
     resolution:
       integrity: sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==
-  /@rollup/plugin-json/4.1.0_rollup@2.22.0:
-    dependencies:
-      '@rollup/pluginutils': 3.0.10_rollup@2.22.0
-      rollup: 2.22.0
-    dev: true
-    peerDependencies:
-      rollup: ^1.20.0 || ^2.0.0
-    resolution:
-      integrity: sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==
   /@rollup/plugin-node-resolve/7.1.1:
     dependencies:
       '@rollup/pluginutils': 3.0.8
@@ -3246,23 +3235,6 @@ packages:
       rollup: ^1.20.0
     resolution:
       integrity: sha512-14ddhD7TnemeHE97a4rLOhobfYvUVcaYuqTnL8Ti7Jxi9V9Jr5LY7Gko4HZ5k4h4vqQM0gBQt6tsp9xXW94WPA==
-  /@rollup/plugin-node-resolve/8.4.0_rollup@2.22.0:
-    dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.22.0
-      '@types/resolve': 1.17.1
-      builtin-modules: 3.1.0
-      deep-freeze: 0.0.1
-      deepmerge: 4.2.2
-      is-module: 1.0.0
-      resolve: 1.17.0
-      rollup: 2.22.0
-    dev: true
-    engines:
-      node: '>= 8.0.0'
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0
-    resolution:
-      integrity: sha512-LFqKdRLn0ShtQyf6SBYO69bGE1upV6wUhBX0vFOUnLAyzx5cwp8svA0eHUnu8+YU57XOkrMtfG63QOpQx25pHQ==
   /@rollup/plugin-typescript/3.0.0_b7ed8cf084a78b83114da7b845e0a30a:
     dependencies:
       '@rollup/pluginutils': 3.0.8_rollup@2.16.1
@@ -3362,19 +3334,6 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-d44M7t+PjmMrASHbhgpSbVgtL6EFyX7J4mYxwQ/c5eoaE6N2VgCgEcWVzNnwycIloti+/MpwFr8qfw+nRw00sw==
-  /@rollup/pluginutils/3.0.10_rollup@2.22.0:
-    dependencies:
-      '@types/estree': 0.0.39
-      estree-walker: 1.0.1
-      picomatch: 2.2.2
-      rollup: 2.22.0
-    dev: true
-    engines:
-      node: '>= 8.0.0'
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0
-    resolution:
-      integrity: sha512-d44M7t+PjmMrASHbhgpSbVgtL6EFyX7J4mYxwQ/c5eoaE6N2VgCgEcWVzNnwycIloti+/MpwFr8qfw+nRw00sw==
   /@rollup/pluginutils/3.0.8:
     dependencies:
       estree-walker: 1.0.1
@@ -3450,18 +3409,6 @@ packages:
       estree-walker: 1.0.1
       picomatch: 2.2.2
       rollup: 2.2.0
-    engines:
-      node: '>= 8.0.0'
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0
-    resolution:
-      integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==
-  /@rollup/pluginutils/3.1.0_rollup@2.22.0:
-    dependencies:
-      '@types/estree': 0.0.39
-      estree-walker: 1.0.1
-      picomatch: 2.2.2
-      rollup: 2.22.0
     engines:
       node: '>= 8.0.0'
     peerDependencies:
@@ -3650,6 +3597,7 @@ packages:
   /@types/resolve/1.17.1:
     dependencies:
       '@types/node': 14.0.23
+    dev: false
     resolution:
       integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==
   /@types/yargs-parser/15.0.0:
@@ -3837,13 +3785,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-add7dgA5ppRPxCFJoAGfMDi7PIBXq1RtGo7BhbLaxwrXPOmw8gq48Y9ozT01hUKy9byMjlR20EJhu5zlkErEkg==
-  /acorn/7.3.1:
-    dev: true
-    engines:
-      node: '>=0.4.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-tLc0wSnatxAQHVHUapaHdz72pi9KUyHjq5KyHjGg9Y8Ifdc79pTh2XvI6I1/chZbnM7QtNKzh66ooDogPZSleA==
   /aggregate-error/3.0.1:
     dependencies:
       clean-stack: 2.2.0
@@ -5030,6 +4971,7 @@ packages:
     resolution:
       integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==
   /deep-freeze/0.0.1:
+    dev: false
     resolution:
       integrity: sha1-OgsABd4YZygZ39OM0x+RF5yJPoQ=
   /deep-is/0.1.3:
@@ -5037,6 +4979,7 @@ packages:
     resolution:
       integrity: sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
   /deepmerge/4.2.2:
+    dev: false
     engines:
       node: '>=0.10.0'
     resolution:
@@ -8892,6 +8835,7 @@ packages:
     resolution:
       integrity: sha512-iAu/j9/WJ0i+zT0sAMuQnsEbmOKzdQ4Yxu5rbPs9aUCyqveI1Kw3H4Fi9NWfCOpb8luEySD2lDyFWL9CrLE8iw==
   /rollup/2.22.0:
+    dev: true
     engines:
       node: '>=10.0.0'
     hasBin: true
