@@ -61,7 +61,9 @@
     "typescript": "^3.7.5"
   },
   "ava": {
-    "compileEnhancements": false,
+    "babel": {
+      "compileEnhancements": false
+    },
     "extensions": [
       "ts"
     ],

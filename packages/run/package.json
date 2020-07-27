@@ -55,7 +55,9 @@
     "sinon": "8.0.4"
   },
   "ava": {
-    "compileEnhancements": false,
+    "babel": {
+      "compileEnhancements": false
+    },
     "files": [
       "!**/fixtures/**",
       "!**/output/**",

@@ -58,11 +58,13 @@
   "devDependencies": {
     "acorn": "^7.1.1",
     "acorn-dynamic-import": "^4.0.0",
-    "ava": "^2.4.0",
     "prettier": "^2.0.5",
     "rollup": "^2.7.5"
   },
   "ava": {
+    "babel": {
+      "compileEnhancements": false
+    },
     "files": [
       "!**/fixtures/**",
       "!**/snapshots/**"

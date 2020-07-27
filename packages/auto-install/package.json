@@ -52,7 +52,9 @@
     "rollup": "^2.0.0"
   },
   "ava": {
-    "compileEnhancements": false,
+    "babel": {
+      "compileEnhancements": false
+    },
     "extensions": [
       "ts"
     ],

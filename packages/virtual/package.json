@@ -48,6 +48,9 @@
     "rollup": "^2.0.0"
   },
   "ava": {
+    "babel": {
+      "compileEnhancements": false
+    },
     "files": [
       "!**/fixtures/**",
       "!**/helpers/**",

@@ -41,10 +41,13 @@
   },
   "devDependencies": {
     "@rollup/plugin-buble": "^0.20.0",
-    "del-cli": "^3.0.0",
-    "rollup": "^2.0.0"
+    "del-cli": "^3.0.1",
+    "rollup": "^2.23.0"
   },
   "ava": {
+    "babel": {
+      "compileEnhancements": false
+    },
     "files": [
       "!**/fixtures/**",
       "!**/helpers/**",

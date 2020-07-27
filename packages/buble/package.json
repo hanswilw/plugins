@@ -49,19 +49,21 @@
     "rollup": "^1.20.0||^2.0.0"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^3.0.8",
+    "@rollup/pluginutils": "^3.1.0",
     "@types/buble": "^0.19.2",
     "buble": "^0.20.0"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^3.0.0",
-    "del-cli": "^3.0.0",
-    "rollup": "^2.0.0",
+    "@rollup/plugin-typescript": "^3.1.1",
+    "del-cli": "^3.0.1",
+    "rollup": "^2.23.0",
     "source-map": "^0.7.3",
-    "typescript": "^3.7.4"
+    "typescript": "^3.9.7"
   },
   "ava": {
-    "compileEnhancements": false,
+    "babel": {
+      "compileEnhancements": false
+    },
     "extensions": [
       "ts"
     ],

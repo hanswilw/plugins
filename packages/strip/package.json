@@ -37,15 +37,18 @@
     "rollup": "^1.20.0 || ^2.0.0"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^3.0.4",
+    "@rollup/pluginutils": "^3.1.0",
     "estree-walker": "^1.0.1",
-    "magic-string": "^0.25.5"
+    "magic-string": "^0.25.7"
   },
   "devDependencies": {
-    "acorn": "7.1.0",
-    "rollup": "^2.0.0"
+    "acorn": "^7.3.1",
+    "rollup": "^2.23.0"
   },
   "ava": {
+    "babel": {
+      "compileEnhancements": false
+    },
     "files": [
       "!**/fixtures/**",
       "!**/helpers/**",

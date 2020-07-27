@@ -55,6 +55,7 @@ async function generate(input, babelOptions = {}, generateOptions = {}, rollupOp
 
   return getCode(bundle, {
     format: 'cjs',
+    exports: 'auto',
     ...generateOptions
   });
 }

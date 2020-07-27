@@ -44,20 +44,23 @@
     "rollup": "^1.20.0||^2.0.0"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^3.0.4",
-    "make-dir": "^3.0.0",
-    "mime": "^2.4.4"
+    "@rollup/pluginutils": "^3.1.0",
+    "make-dir": "^3.1.0",
+    "mime": "^2.4.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "@babel/register": "^7.9.0",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.5",
     "del": "^5.1.0",
-    "globby": "^10.0.1",
-    "rollup": "^2.0.0",
-    "rollup-plugin-babel": "^4.3.3"
+    "globby": "^10.0.2",
+    "rollup": "^2.23.0",
+    "rollup-plugin-babel": "^4.4.0"
   },
   "ava": {
+    "babel": {
+      "compileEnhancements": false
+    },
     "files": [
       "!**/fixtures/**",
       "!**/output/**",

@@ -55,6 +55,9 @@
     "source-map-support": "^0.5.16"
   },
   "ava": {
+    "babel": {
+      "compileEnhancements": false
+    },
     "files": [
       "!**/fixtures/**",
       "!**/helpers/**",

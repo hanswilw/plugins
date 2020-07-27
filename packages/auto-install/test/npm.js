@@ -27,7 +27,9 @@ test('invalid manager', (t) => {
         },
         plugins: [autoInstall({ pkgFile, manager: 'foo' }), resolve()]
       }),
-    RangeError
+    {
+      instanceOf: RangeError
+    }
   );
   t.snapshot(error.message);
 });

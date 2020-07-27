@@ -54,7 +54,9 @@
     "typescript": "^3.7.4"
   },
   "ava": {
-    "compileEnhancements": false,
+    "babel": {
+      "compileEnhancements": false
+    },
     "extensions": [
       "ts"
     ],
