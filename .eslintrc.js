@@ -33,15 +33,6 @@ module.exports = {
     'import/no-namespace': 'off',
     'import/no-named-export': 'off',
     'no-unused-vars': 'off',
-    'prettier/prettier': [
-      'error',
-      {
-        arrowParens: 'always',
-        printWidth: 100,
-        singleQuote: true,
-        trailingComma: 'none',
-        plugins: ['prettier-plugin-package']
-      }
-    ]
+    'prettier/prettier': 'error'
   }
 };
