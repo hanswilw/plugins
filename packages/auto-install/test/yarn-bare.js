@@ -14,7 +14,7 @@ const input = join(cwd, '../input.js');
 
 process.chdir(cwd);
 
-test('yarn, bare', async (t) => {
+test.serial('yarn, bare', async (t) => {
   await rollup({
     input,
     output: {
