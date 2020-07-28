@@ -295,7 +295,7 @@ It's main purpose is to allow other tools for configuration of transpilation wit
 ```js
 import { createBabelInputPluginFactory } from '@rollup/plugin-babel';
 
-export default createBabelInputPluginFactory(babelCore => {
+export default createBabelInputPluginFactory((babelCore) => {
   function myPlugin() {
     return {
       visitor: {}
@@ -314,10 +314,7 @@ export default createBabelInputPluginFactory(babelCore => {
       };
     },
 
-    config(
-      cfg /* Passed Babel's 'PartialConfig' object. */,
-      { code, customOptions }
-    ) {
+    config(cfg /* Passed Babel's 'PartialConfig' object. */, { code, customOptions }) {
       if (cfg.hasFilesystemConfig()) {
         // Use the normal config
         return cfg.options;
