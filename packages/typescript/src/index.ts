@@ -63,6 +63,7 @@ export default function typescript(options: RollupTypescriptOptions = {}): Plugi
         // eslint-disable-next-line
         program?.close();
       }
+      emittedFiles.clear();
     },
 
     renderStart(outputOptions) {
